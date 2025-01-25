@@ -22,7 +22,7 @@ def predict():
         float(data['weight']),
         float(data['mortalityRate'])
     ]
-    # Make prediction
+    # Make prediction base on the features
     prediction = model.predict([features])[0]
     labels = {
         1: "High chance of infectious disease",
